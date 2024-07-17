@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".MainActivity">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         tools:ignore="MissingConstraints"
+         android:orientation="vertical">
+          
+          <ImageView
+              android:layout_width="160dp"
+              android:layout_height="160dp">
+          </ImageView>
+          <ImageView
+              android:layout_width="160dp"
+              android:layout_height="160dp"
+              android:src="@drawable/accountbilog" />
+          <!--for the username input -->
+          <EditText
+              android:id="@+id/username_input"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="13dp"
+              android:hint="Username"
+              android:inputType="text"
+              android:padding="18dp"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textColorHint="@color/white"
+              android:textSize="22sp"
+              android:visibility="visible"
+              tools:visibility="visible" />
+          <!--        for the password input -->
+          <EditText
+              android:id="@+id/textPassword_input"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:hint="Password"
+              android:inputType="textPassword"
+              android:padding="18dp"
+              android:textAlignment="center"
+              android:textColor="@color/black"
+              android:textColorHint="@color/white"
+              android:textSize="22sp"
+              android:visibility="visible"
+              tools:visibility="visible" />
+          <!--        for the log in "button" -->
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Log In "
+              android:backgroundTint="@color/white"
+              android:textColor="#000000"
+              android:padding="18dp"
+              android:layout_marginTop="32dp"
+              android:textSize="20sp"
+              android:id="@+id/login_btn"/>
+
+          <!--        for the alternative log in text -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Alternative Log in"
+              android:textSize="18sp"
+              android:textColor="@color/white"
+              android:layout_marginTop="32dp"/>
+          <!--another linear layout for the pics for the alternative log in-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              android:gravity="center">
+               <!--for the github
+               and discord pic-->
+               <ImageView
+                   android:layout_width="64dp"
+                   android:layout_height="64dp"
+                   android:layout_margin="16dp"
+                   android:id="@+id/gmail_btn"
+                   android:src="@drawable/github"/>
+
+               <ImageView
+                   android:layout_width="62dp"
+                   android:layout_height="62dp"
+                   android:layout_margin="16dp"
+                   android:id="@+id/linkedin_btn"
+                   android:src="@drawable/discord"/>
+          </LinearLayout>
+
+     </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
